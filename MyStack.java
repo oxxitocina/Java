@@ -1,10 +1,7 @@
 package com.company;
 import java.util.*;
 
-public class MyStack {
-
-
-    public static class Stack<T>{
+public class MyStack<T> {
 
         LinkedList<T> myStack = new LinkedList<>();
 
@@ -24,14 +21,13 @@ public class MyStack {
         public T peek()
         {
             return myStack.get(myStack.size()-1);
-
         }
 
         public T pop(){
             return myStack.remove(myStack.size()-1);
         }
+
         public int size(){
             return myStack.size();
         }
-    }
 }
