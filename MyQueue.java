@@ -1,10 +1,7 @@
 package com.company;
 import java.util.*;
 
-public class MyQueue {
-
-
-    public static class Queue<T>{
+public class MyQueue<T> {
 
         LinkedList<T> myQueue = new LinkedList<>();
 
@@ -17,20 +14,20 @@ public class MyQueue {
         }
 
         public int size(){
-            return (int) myQueue.get(myQueue.size());
+            return myQueue.size();
         }
 
         public T peek(){
             return myQueue.getFirst();
         }
+
         public T enqueue(T newItem){
             myQueue.addLast(newItem);
             return newItem;
         }
-        public T dequeue(){
+        public T dequeue()
+        {
             return myQueue.removeFirst();
+
         }
-
-    }
-
 }
