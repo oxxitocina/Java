@@ -42,7 +42,7 @@ class MyHeap <T extends Comparable<T>> {
                 T temp = heap.get(i);
                 heap.set(i, heap.get(maxI));
                 heap.set(maxI, temp);
-                i = maxI;      // update i
+                i = maxI;  
             }
             else {
                 break;
